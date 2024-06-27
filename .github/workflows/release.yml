@@ -1,9 +1,13 @@
 ---
 name: Release lomo.pfsense
 
-on: # yamllint disable-line rule:truthy
-  release:
-    types: [published]
+#on: # yamllint disable-line rule:truthy
+#  release:
+#    types: [published]
+on:
+  push:
+    branches:
+      - 'pfsense-v**'
 
 jobs:
   release_automation_hub:
