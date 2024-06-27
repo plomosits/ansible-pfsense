@@ -1,0 +1,13 @@
+
+        This connection plugin provides a connection to remote devices
+        over HTTP(S).
+
+ADDED IN: version 2.7.2
+
+SEE ALSO:
+      * Httpapi plugin ansible.plugins.httpapi
+
+
+AUTHOR: Philipp Lomosits
+
+NAME: pfsense
