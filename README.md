@@ -46,8 +46,7 @@ See [Ansible Using collections](https://docs.ansible.com/ansible/latest/user_gui
 ## Modules
 The following modules are currently available:
 
-- [plomosits.pfsense.pfsense_reboot](docs/modules/pfsense_reboot.txt)
-- [plomosits.pfsense.pfsense_reboot](docs/modules/pfsense_reboot.rst)
+- [plomosits.pfsense.pfsense_reboot](../content/module/pfsense_reboot/)
 
 ## More information
 

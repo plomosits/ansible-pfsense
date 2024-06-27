@@ -14,11 +14,9 @@ description: Modules for managing pfSense
 license:
   - GPL-3.0-or-later
 
-# TO-DO: update the tags based on your content type
 tags:
   - networking
   - pfsense
-  - haproxy
 
 repository: https://github.com/plomosits/ansible-pfsense
 documentation: https://github.com/plomosits/ansible-pfsense/wiki
