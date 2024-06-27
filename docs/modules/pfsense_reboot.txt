@@ -16,10 +16,10 @@ AUTHOR: Philipp Lomosits
 EXAMPLES:
 
 - name: reboot
-  lomo.pfsense.reboot:
+  plomosits.pfsense.reboot:
 
 - name: reroot
-  lomo.pfsense.reboot:
+  plomosits.pfsense.reboot:
     mode: reroot
 
 

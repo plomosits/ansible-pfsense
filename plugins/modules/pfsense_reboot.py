@@ -20,10 +20,10 @@ options:
 
 EXAMPLES = r"""
 - name: reboot
-  lomo.pfsense.reboot:
+  plomosits.pfsense.reboot:
 
 - name: reroot
-  lomo.pfsense.reboot:
+  plomosits.pfsense.reboot:
     mode: reroot
 """
 
@@ -39,7 +39,7 @@ from ansible.module_utils._text import to_text
 from ansible.module_utils.basic import AnsibleModule
 from ansible.module_utils.connection import Connection
 
-from ansible_collections.lomo.pfsense.plugins.module_utils.diag_reboot \
+from ansible_collections.plomosits.pfsense.plugins.module_utils.diag_reboot \
     import reboot
 
 

@@ -3,9 +3,9 @@
 
 # See https://docs.ansible.com/ansible/latest/dev_guide/collections_galaxy_meta.html
 
-namespace: "lomo"
+namespace: "plomosits"
 name: "pfsense"
-version: 0.63.0
+version: 2.7.2
 readme: README.md
 authors:
   - Philipp Lomosits <p.lomosits@gmail.com>
@@ -19,9 +19,6 @@ tags:
   - networking
   - pfsense
   - haproxy
-
-dependencies:
-  "lomo.pfsense": ">=2.7.0"
 
 repository: https://github.com/plomosits/ansible-pfsense
 documentation: https://github.com/plomosits/ansible-pfsense/wiki

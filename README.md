@@ -1,6 +1,6 @@
-# Lomo Pfsense Collection
+# Plomosits Pfsense Collection
 
-This repository contains the `lomo.pfsense` Ansible Collection.
+This repository contains the `plomosits.pfsense` Ansible Collection.
 
 Inspired by [pfsensible.core](https://github.com/pfsensible/core) project, I'm working on a collection that does not require any prerequisites on the pfsense target.
 
@@ -14,31 +14,31 @@ Some modules and plugins require external libraries. Please check the requiremen
 
 ## Included content
 
-Please check the included content on the [Ansible Galaxy page for this collection](https://galaxy.ansible.com/lomo/pfsense).
+Please check the included content on the [Ansible Galaxy page for this collection](https://galaxy.ansible.com/plomosits/pfsense).
 
 ## Using this collection
 
 ```bash
-ansible-galaxy collection install lomo.pfsense
+ansible-galaxy collection install plomosits.pfsense
 ```
 
 You can also include it in a `requirements.yml` file and install it via `ansible-galaxy collection install -r requirements.yml` using the format:
 
 ```yaml
 collections:
-  - name: lomo.pfsense
+  - name: plomosits.pfsense
 ```
 
 To upgrade the collection to the latest available version, run the following command:
 
 ```bash
-ansible-galaxy collection install lomo.pfsense --upgrade
+ansible-galaxy collection install plomosits.pfsense --upgrade
 ```
 
-You can also install a specific version of the collection, for example, if you need to downgrade when something is broken in the latest version (please report an issue in this repository). Use the following syntax where `X.Y.Z` can be any [available version](https://galaxy.ansible.com/lomo/pfsense):
+You can also install a specific version of the collection, for example, if you need to downgrade when something is broken in the latest version (please report an issue in this repository). Use the following syntax where `X.Y.Z` can be any [available version](https://galaxy.ansible.com/plomosits/pfsense):
 
 ```bash
-ansible-galaxy collection install lomo.pfsense:==X.Y.Z
+ansible-galaxy collection install plomosits.pfsense:==X.Y.Z
 ```
 
 See [Ansible Using collections](https://docs.ansible.com/ansible/latest/user_guide/collections_using.html) for more details.
@@ -46,8 +46,8 @@ See [Ansible Using collections](https://docs.ansible.com/ansible/latest/user_gui
 ## Modules
 The following modules are currently available:
 
-- [lomo.pfsense.pfsense_reboot](docs/modules/pfsense_reboot.txt)
-- [lomo.pfsense.pfsense_reboot](docs/modules/pfsense_reboot.rst)
+- [plomosits.pfsense.pfsense_reboot](docs/modules/pfsense_reboot.txt)
+- [plomosits.pfsense.pfsense_reboot](docs/modules/pfsense_reboot.rst)
 
 ## More information
 
