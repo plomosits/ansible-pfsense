@@ -1,0 +1,11 @@
+---
+- name: pfSense Factory Defaults
+  hosts: all
+  gather_facts: false
+
+  collections:
+    - plomosits.pfsense
+
+  tasks:
+    - name: Factory Defaults
+      pfsense_factory_defaults:

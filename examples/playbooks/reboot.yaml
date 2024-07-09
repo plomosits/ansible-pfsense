@@ -1,0 +1,12 @@
+---
+- name: pfSense Reboot
+  hosts: all
+  gather_facts: false
+
+  collections:
+    - plomosits.pfsense
+
+  tasks:
+    - name: Reboot
+      pfsense_reboot:
+        mode: reboot

@@ -1,7 +1,5 @@
-#!/usr/bin/python
 
-
-def reboot(connection, rebootmode="Reboot"):
+def diag_reboot(connection, rebootmode="Reboot"):
     connection.post(
         "/diag_reboot.php",
         {

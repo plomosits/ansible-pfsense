@@ -7,25 +7,16 @@ __metaclass__ = type
 
 DOCUMENTATION = r"""
 ---
-module: reboot
-short_description: Reboot
-description: This module manages reboot of a target.
+module: factory_defaults
+short_description: Factory Defaults
+description: This module manages factory defaults of a target.
 version_added: 2.7.2
 author: Philipp Lomosits
-options:
-  mode:
-    description: Mode for the reboot process.
-    choices: [ "reboot", "reroot" ]
-    default: reboot
 """
 
 EXAMPLES = r"""
-- name: reboot
-  plomosits.pfsense.reboot:
-
-- name: reroot
-  plomosits.pfsense.reboot:
-    mode: reroot
+- name: factory_defaults
+  plomosits.pfsense.factory_defaults:
 """
 
 RETURN = r"""
@@ -33,21 +24,19 @@ msg:
     description: The output message that the package module generates.
     type: str
     returned: always
-    sample: 'Rebooting'
+    sample: 'Resetting'
 """
 
 from ansible.module_utils._text import to_text
 from ansible.module_utils.basic import AnsibleModule
 from ansible.module_utils.connection import Connection
 
-from ansible_collections.plomosits.pfsense.plugins.module_utils.diag_reboot \
-    import diag_reboot
+from ansible_collections.plomosits.pfsense.plugins.module_utils.diag_defaults \
+    import diag_defaults
 
 
 def main():
-    module_args = dict(
-        mode=dict(type="str", default="reboot", choices=["reboot", "reroot"]),
-    )
+    module_args = dict()
 
     module = AnsibleModule(
         argument_spec=module_args,
@@ -59,9 +48,9 @@ def main():
     try:
         connection = Connection(module._socket_path)
 
-        diag_reboot(connection, module.params["mode"].capitalize())
+        diag_defaults(connection)
 
-        result.update({"msg": "Rebooting"})
+        result.update({"changed": True, "msg": "Resetting"})
 
     except Exception as exc:
         module.fail_json(msg=to_text(exc))
