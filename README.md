@@ -75,13 +75,14 @@ firewalls:
 ansible-playbook -i inventory.yaml playbooks/reboot.yaml
 ```
 
-## [Examples](examples)
+## [Examples](https://github.com/plomosits/ansible-pfsense/tree/pfsense-v2.7.2/examples)
 
 ## Modules
 The following modules are currently available:
 
 - [plomosits.pfsense.pfsense_factory_defaults](../content/module/pfsense_factory_defaults/)
 - [plomosits.pfsense.pfsense_reboot](../content/module/pfsense_reboot/)
+- [plomosits.pfsense.pfsense_setup_wizard](../content/module/pfsense_setup_wizard/)
 
 ## More information
 
