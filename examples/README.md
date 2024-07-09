@@ -2,7 +2,7 @@
 
 ## Development
 
-### Install a collection from source
+### Install collection from source
 ```bash
 ansible-galaxy collection install ../ --force
 ```
@@ -12,6 +12,11 @@ ansible-galaxy collection install ../ --force
 ### Factory Default
 ```bash
 ansible-playbook -i inventory.yaml playbooks/factory_defaults.yaml -v
+```
+
+### Setup
+```bash
+ansible-playbook -i inventory.yaml playbooks/setup.yaml -v
 ```
 
 ### Reboot

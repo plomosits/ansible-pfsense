@@ -15,7 +15,7 @@ author: Philipp Lomosits
 options:
   mode:
     description: Mode for the reboot process.
-    choices: [ "reboot", "reroot" ]
+    choices: ["reboot", "reroot"]
     default: reboot
 """
 

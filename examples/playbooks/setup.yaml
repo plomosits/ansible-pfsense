@@ -1,0 +1,27 @@
+---
+- name: pfSense Setup
+  hosts: all
+  gather_facts: false
+
+  collections:
+    - plomosits.pfsense
+
+  tasks:
+    - name: pfSense Setup
+      pfsense_setup_wizard:
+        steps:
+          2:
+            hostname: pfSense
+            domain: home.arpa
+            primarydnsserver: 8.8.8.8
+            secondarydnsserver: 8.8.4.4
+            overridedns: true
+          3:
+            timeserverhostname: 0.europe.pool.ntp.org
+            timezone: Europe/Vienna
+          4:
+            blockrfc1918privatenetworks: true
+            blockbogonnetworks: true
+          5:
+            lanipaddress: 192.168.73.2
+            subnetmask: 24
